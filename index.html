@@ -419,6 +419,150 @@
 
   <hr class="divider"/>
 
+  <!-- ══ PROCEDURA CARICO ══ -->
+  <div class="section-title">Procedura passo per passo — Carico</div>
+
+  <div class="callout info" style="margin-bottom:20px">
+    <div class="callout-icon">ℹ️</div>
+    <div class="callout-body" style="font-size:13px">Usa <code style="font-family:var(--mono);background:#dbeafe;padding:1px 4px;border-radius:3px">/carico</code> ogni volta che arriva della merce e la devi aggiungere al magazzino. La procedura è più rapida rispetto allo scarico: bastano articolo, quantità e conferma.</div>
+  </div>
+
+  <div class="steps">
+
+    <!-- step 1 -->
+    <div class="step">
+      <div class="step-left"><div class="step-num accent">1</div><div class="step-line"></div></div>
+      <div class="step-body">
+        <div class="step-title">Apri la chat con il Bot</div>
+        <div class="step-desc">Apri Telegram (app o web) e cerca il bot del magazzino SpixItalia tramite il link fornito dal responsabile.</div>
+        <div class="callout info" style="margin:0">
+          <div class="callout-icon">ℹ️</div>
+          <div class="callout-body" style="font-size:13px">Se è la prima volta, digita <code style="font-family:var(--mono);background:#dbeafe;padding:1px 4px;border-radius:3px">/start</code> per attivarlo.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- step 2 -->
+    <div class="step">
+      <div class="step-left"><div class="step-num accent">2</div><div class="step-line"></div></div>
+      <div class="step-body">
+        <div class="step-title">Invia il comando <code style="font-family:var(--mono);background:#f0ede8;padding:2px 8px;border-radius:4px;color:var(--accent)">/carico</code></div>
+        <div class="step-desc">Il bot mostra subito l'elenco di tutti gli articoli disponibili a magazzino.</div>
+        <div class="tg-chat">
+          <div class="tg-header"><div class="tg-avatar">📦</div><div><div class="tg-name">Bot Magazzino SpixItalia</div><div class="tg-status">online</div></div></div>
+          <div class="bubble user">/carico <span class="ts">10:22</span></div>
+          <div class="bubble bot">
+            📥 <strong>Procedura CARICO avviata</strong><br>
+            Operatore: <strong>L. Conti</strong><br><br>
+            Seleziona il tipo di articolo da caricare:
+            <div class="tg-btn-row" style="flex-direction:column;gap:4px;align-items:flex-start;margin-top:8px">
+              <button class="tg-btn" style="width:100%;text-align:left">Scatola Double Americana (60cm) — 1.450 pz disponibili</button>
+              <button class="tg-btn" style="width:100%;text-align:left">Scatola Double Americana (50cm) — 2.310 pz disponibili</button>
+              <button class="tg-btn" style="width:100%;text-align:left">Scatola Double Fustellata (60cm) — 980 pz disponibili</button>
+              <button class="tg-btn" style="width:100%;text-align:left">Pellicola Film Termoretraibile — 18 rotoli disponibili</button>
+              <button class="tg-btn" style="width:100%;text-align:left">Scotch Avana — 72 pz disponibili</button>
+              <button class="tg-btn" style="width:100%;text-align:left">Scotch Trasparente — 65 pz disponibili</button>
+              <button class="tg-btn" style="background:#dc2626;width:100%;text-align:left">❌ Annulla</button>
+            </div>
+            <span class="ts">10:22</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- step 3 -->
+    <div class="step">
+      <div class="step-left"><div class="step-num accent">3</div><div class="step-line"></div></div>
+      <div class="step-body">
+        <div class="step-title">Seleziona l'articolo</div>
+        <div class="step-desc">Tocca il pulsante corrispondente all'articolo appena ricevuto. La giacenza attuale è visibile accanto al nome.</div>
+        <div class="tg-chat">
+          <div class="tg-header"><div class="tg-avatar">📦</div><div><div class="tg-name">Bot Magazzino SpixItalia</div><div class="tg-status">online</div></div></div>
+          <div class="bubble user">Scatola Double Americana (60cm) — 1.450 pz disponibili <span class="ts">10:22</span></div>
+          <div class="bubble bot">
+            ✅ Selezionata: <strong>Scatola Double Americana (60cm)</strong> (<code style="font-family:var(--mono);font-size:11px;background:#f0f0f0;padding:1px 4px;border-radius:3px">D60</code>)<br>
+            Disponibili attualmente: <strong>1.450 pz</strong><br><br>
+            📝 Quante unità stai caricando?<br>
+            <em style="font-size:12px;color:#888">Digita il numero e premi invio.</em>
+            <span class="ts">10:22</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- step 4 -->
+    <div class="step">
+      <div class="step-left"><div class="step-num accent">4</div><div class="step-line"></div></div>
+      <div class="step-body">
+        <div class="step-title">Inserisci la quantità</div>
+        <div class="step-desc">Digita il numero di unità ricevute e premi invio. Solo numeri interi positivi (es: <code style="font-family:var(--mono);font-size:13px;background:#f0ede8;padding:1px 5px;border-radius:3px">500</code>).</div>
+        <div class="callout warn" style="margin-bottom:0">
+          <div class="callout-icon">⚠️</div>
+          <div class="callout-body" style="font-size:13px">Inserisci solo la quantità effettivamente ricevuta e contata. Il valore viene aggiunto alla giacenza corrente.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- step 5 -->
+    <div class="step">
+      <div class="step-left"><div class="step-num" style="background:var(--green)">✓</div><div class="step-line"></div></div>
+      <div class="step-body">
+        <div class="step-title">Conferma riepilogo</div>
+        <div class="step-desc">Controlla che tutti i dati siano corretti, poi tocca <strong>✅ Conferma</strong> per registrare il carico.</div>
+        <div class="tg-chat">
+          <div class="tg-header"><div class="tg-avatar">📦</div><div><div class="tg-name">Bot Magazzino SpixItalia</div><div class="tg-status">online</div></div></div>
+          <div class="bubble user">500 <span class="ts">10:23</span></div>
+          <div class="bubble bot">
+            📋 <strong>RIEPILOGO CARICO</strong><br>
+            ━━━━━━━━━━━━━━━━━━━<br>
+            🗂 Articolo: <strong>D60 — Scatola Double Americana (60cm)</strong><br>
+            📈 Quantità: <strong>500 pz</strong><br>
+            👷 Operatore: <strong>L. Conti</strong><br>
+            📦 Giacenza: 1.450 → <strong>1.950 pz</strong><br>
+            🕐 02/04/2026 alle 10:23<br>
+            ━━━━━━━━━━━━━━━━━━━
+            <div class="tg-btn-row" style="margin-top:8px">
+              <button class="tg-btn" style="background:#15803d">✅  Conferma</button>
+              <button class="tg-btn" style="background:#dc2626">❌  Annulla</button>
+            </div>
+            <span class="ts">10:23</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- step 6 -->
+    <div class="step">
+      <div class="step-left"><div class="step-num" style="background:var(--green)">🏁</div></div>
+      <div class="step-body">
+        <div class="step-title">Operazione completata</div>
+        <div class="step-desc">Il bot registra il carico e mostra la conferma finale con la giacenza aggiornata.</div>
+        <div class="tg-chat">
+          <div class="tg-header"><div class="tg-avatar">📦</div><div><div class="tg-name">Bot Magazzino SpixItalia</div><div class="tg-status">online</div></div></div>
+          <div class="bubble user">✅  Conferma <span class="ts">10:23</span></div>
+          <div class="bubble bot">
+            ✅ <strong>Carico registrato con successo!</strong><br>
+            ━━━━━━━━━━━━━━━━━━━<br>
+            🗂 Articolo: <strong>D60 — Scatola Double Americana (60cm)</strong><br>
+            📈 Caricate: <strong>500 pz</strong><br>
+            👷 Operatore: <strong>L. Conti</strong><br>
+            📦 Giacenza aggiornata: <strong>1.950 pz</strong><br>
+            🕐 02/04/2026 alle 10:23<br>
+            ━━━━━━━━━━━━━━━━━━━
+            <span class="ts">10:23</span>
+          </div>
+        </div>
+        <div class="callout ok" style="margin-top:12px;margin-bottom:0">
+          <div class="callout-icon">✅</div>
+          <div class="callout-body" style="font-size:13px">Il movimento è ora <strong>salvato nel registro</strong> e visibile sulla dashboard del responsabile come <strong>↑ CARICO</strong>. Non è necessario fare altro.</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /steps -->
+
+  <hr class="divider"/>
+
   <!-- ══ LOGIN DASHBOARD ══ -->
   <div class="section-title">Accesso alla Dashboard</div>
 
