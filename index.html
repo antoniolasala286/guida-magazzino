@@ -1645,8 +1645,8 @@
       <div class="callout-body" style="font-size:13.5px">
         Il responsabile dispone di una <strong>dashboard web</strong> accessibile da qualsiasi browser, aggiornata in
         tempo reale.
-        È organizzata in quattro sezioni: <strong>Dashboard</strong> (giacenze e allerte), <strong>Statistiche</strong>
-        (grafici movimenti), <strong>Movimenti</strong> (registro completo con filtri) e <strong>Dettagli Articoli</strong> (schede articoli in sola lettura).
+        È organizzata in cinque sezioni: <strong>Dashboard</strong> (giacenze e allerte), <strong>Statistiche</strong>
+        (grafici movimenti), <strong>Movimenti</strong> (registro completo con filtri), <strong>Dettagli Articoli</strong> (schede articoli in sola lettura) e <strong>Clienti</strong> (elenco clienti con statistiche di consumo).
       </div>
     </div>
 
@@ -1679,6 +1679,7 @@
         <div style="padding:10px 14px;font-size:12px;font-weight:500;color:#94a3b8;border-bottom:2px solid transparent;">📊 Statistiche</div>
         <div style="padding:10px 14px;font-size:12px;font-weight:500;color:#94a3b8;border-bottom:2px solid transparent;">📝 Movimenti</div>
         <div style="padding:10px 14px;font-size:12px;font-weight:500;color:#94a3b8;border-bottom:2px solid transparent;">🔎 Dettagli Articoli</div>
+        <div style="padding:10px 14px;font-size:12px;font-weight:500;color:#94a3b8;border-bottom:2px solid transparent;">👥 Clienti</div>
       </div>
       <div class="dash-body">
         <!-- Alert scorta bassa -->
@@ -1787,6 +1788,7 @@
         <div style="padding:10px 14px;font-size:12px;font-weight:500;color:#f8fafc;border-bottom:2px solid #3b82f6;display:flex;align-items:center;gap:4px;">📊 Statistiche <span style="background:#3b82f6;color:#fff;border-radius:10px;padding:1px 6px;font-size:9px;font-weight:700;">3</span></div>
         <div style="padding:10px 14px;font-size:12px;font-weight:500;color:#94a3b8;border-bottom:2px solid transparent;">📝 Movimenti</div>
         <div style="padding:10px 14px;font-size:12px;font-weight:500;color:#94a3b8;border-bottom:2px solid transparent;">🔎 Dettagli Articoli</div>
+        <div style="padding:10px 14px;font-size:12px;font-weight:500;color:#94a3b8;border-bottom:2px solid transparent;">👥 Clienti</div>
       </div>
       <div class="dash-body">
         <!-- Pannello filtri reale -->
@@ -1940,6 +1942,7 @@
         <div style="padding:10px 14px;font-size:12px;font-weight:500;color:#94a3b8;border-bottom:2px solid transparent;">📊 Statistiche</div>
         <div style="padding:10px 14px;font-size:12px;font-weight:500;color:#f8fafc;border-bottom:2px solid #3b82f6;">📝 Movimenti</div>
         <div style="padding:10px 14px;font-size:12px;font-weight:500;color:#94a3b8;border-bottom:2px solid transparent;">🔎 Dettagli Articoli</div>
+        <div style="padding:10px 14px;font-size:12px;font-weight:500;color:#94a3b8;border-bottom:2px solid transparent;">👥 Clienti</div>
       </div>
       <div class="dash-body">
         <div style="overflow-x:auto">
@@ -2036,6 +2039,7 @@
         <div style="padding:10px 14px;font-size:12px;font-weight:500;color:#94a3b8;border-bottom:2px solid transparent;">📊 Statistiche</div>
         <div style="padding:10px 14px;font-size:12px;font-weight:500;color:#94a3b8;border-bottom:2px solid transparent;">📝 Movimenti</div>
         <div style="padding:10px 14px;font-size:12px;font-weight:500;color:#f8fafc;border-bottom:2px solid #3b82f6;">🔎 Dettagli Articoli</div>
+        <div style="padding:10px 14px;font-size:12px;font-weight:500;color:#94a3b8;border-bottom:2px solid transparent;">👥 Clienti</div>
       </div>
       <div class="dash-body">
         <div style="overflow-x:auto">
@@ -2146,6 +2150,110 @@
         </div>
       </div>
 
+    </div>
+
+
+    <!-- mockup 5: Clienti -->
+    <div class="screen-label">Sezione 5 — Clienti</div>
+    <div class="dash-mockup">
+      <div class="dash-bar">
+        <div class="dash-dot" style="background:#ef4444"></div>
+        <div class="dash-dot" style="background:#f59e0b;margin-left:4px"></div>
+        <div class="dash-dot" style="background:#10b981;margin-left:4px"></div>
+        <div class="dash-bar-title">Bot Magazzino — Spix Italia</div>
+        <div class="dash-url">spixitalia-botmagazzino.duckdns.org</div>
+      </div>
+      <!-- Header -->
+      <div style="background:rgba(15,23,42,0.95);border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 18px;display:flex;align-items:center;gap:12px;">
+        <img src="../Progetto Bot Magazzino/logo.png" alt="Spix Italia" style="height:60px;width:auto;object-fit:contain;flex-shrink:0;border-radius:10px;padding:1px;background:transparent;">
+        <div>
+          <div style="font-size:13px;font-weight:700;color:#f8fafc;">Bot Magazzino</div>
+          <div style="font-size:10px;color:#94a3b8;">Dashboard giacenze · aggiornamento live da Google Sheets</div>
+        </div>
+        <div style="margin-left:auto;display:flex;align-items:center;gap:6px;font-size:11px;color:#94a3b8;">
+          <div style="width:7px;height:7px;border-radius:50%;background:#10b981;"></div>
+          <span>Aggiornato alle 09:14</span>
+        </div>
+        <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:5px 12px;font-size:11px;color:#f8fafc;margin-left:8px;">Esci</div>
+      </div>
+      <!-- Tab: Clienti attiva -->
+      <div style="background:rgba(15,23,42,0.9);border-bottom:1px solid rgba(255,255,255,0.08);padding:0 16px;display:flex;gap:2px;">
+        <div style="padding:10px 14px;font-size:12px;font-weight:500;color:#94a3b8;border-bottom:2px solid transparent;">📦 Dashboard</div>
+        <div style="padding:10px 14px;font-size:12px;font-weight:500;color:#94a3b8;border-bottom:2px solid transparent;">📊 Statistiche</div>
+        <div style="padding:10px 14px;font-size:12px;font-weight:500;color:#94a3b8;border-bottom:2px solid transparent;">📝 Movimenti</div>
+        <div style="padding:10px 14px;font-size:12px;font-weight:500;color:#94a3b8;border-bottom:2px solid transparent;">🔎 Dettagli Articoli</div>
+        <div style="padding:10px 14px;font-size:12px;font-weight:500;color:#f8fafc;border-bottom:2px solid #3b82f6;">👥 Clienti</div>
+      </div>
+      <div class="dash-body">
+        <div style="overflow-x:auto">
+          <table class="dash-table">
+            <thead>
+              <tr>
+                <th>Cliente</th>
+                <th>Articoli</th>
+                <th style="text-align:right">Pezzi scaricati</th>
+                <th style="text-align:right">Pezzi resi</th>
+                <th style="text-align:right">Consumo netto</th>
+                <th style="text-align:right">N° mov.</th>
+                <th>Ultimo mov.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong style="color:#f8fafc;">Rossi Imballaggi Srl</strong></td>
+                <td style="font-size:11px;line-height:1.8;">
+                  <span style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:4px;padding:2px 8px;white-space:nowrap;margin:1px">D60: <span style="color:#ef4444">850</span></span>
+                  <span style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:4px;padding:2px 8px;white-space:nowrap;margin:1px">PEL: <span style="color:#ef4444">40</span></span>
+                </td>
+                <td style="text-align:right;color:#ef4444;font-weight:600;font-family:monospace;">890</td>
+                <td style="text-align:right;color:#94a3b8;">—</td>
+                <td style="text-align:right;color:#ef4444;font-weight:600;font-family:monospace;">890</td>
+                <td style="text-align:right;color:#94a3b8;">12</td>
+                <td style="font-family:monospace;font-size:11px;color:#94a3b8;">15/05/2026</td>
+              </tr>
+              <tr style="background:rgba(255,255,255,0.02)">
+                <td><strong style="color:#f8fafc;">Bianchi &amp; C. Srl</strong></td>
+                <td style="font-size:11px;line-height:1.8;">
+                  <span style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:4px;padding:2px 8px;white-space:nowrap;margin:1px">D60: <span style="color:#ef4444">620</span> / <span style="color:#10b981">+50</span></span>
+                  <span style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:4px;padding:2px 8px;white-space:nowrap;margin:1px">D50: <span style="color:#ef4444">200</span></span>
+                </td>
+                <td style="text-align:right;color:#ef4444;font-weight:600;font-family:monospace;">820</td>
+                <td style="text-align:right;color:#10b981;font-weight:600;font-family:monospace;">+50</td>
+                <td style="text-align:right;color:#ef4444;font-weight:600;font-family:monospace;">770</td>
+                <td style="text-align:right;color:#94a3b8;">9</td>
+                <td style="font-family:monospace;font-size:11px;color:#94a3b8;">12/05/2026</td>
+              </tr>
+              <tr>
+                <td><strong style="color:#f8fafc;">Logistica Nord Spa</strong></td>
+                <td style="font-size:11px;line-height:1.8;">
+                  <span style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:4px;padding:2px 8px;white-space:nowrap;margin:1px">SCA: <span style="color:#ef4444">180</span></span>
+                </td>
+                <td style="text-align:right;color:#ef4444;font-weight:600;font-family:monospace;">180</td>
+                <td style="text-align:right;color:#94a3b8;">—</td>
+                <td style="text-align:right;color:#ef4444;font-weight:600;font-family:monospace;">180</td>
+                <td style="text-align:right;color:#94a3b8;">4</td>
+                <td style="font-family:monospace;font-size:11px;color:#94a3b8;">03/05/2026</td>
+              </tr>
+              <tr style="background:rgba(255,255,255,0.02)">
+                <td><strong style="color:#f8fafc;">Nuovo Cliente Test</strong></td>
+                <td style="font-size:11px;color:#94a3b8;font-style:italic;">Nessun movimento</td>
+                <td style="text-align:right;color:#94a3b8;">—</td>
+                <td style="text-align:right;color:#94a3b8;">—</td>
+                <td style="text-align:right;color:#94a3b8;">—</td>
+                <td style="text-align:right;color:#94a3b8;">—</td>
+                <td style="font-family:monospace;font-size:11px;color:#94a3b8;">—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout info" style="margin-top:14px;margin-bottom:30px">
+      <div class="callout-icon">👥</div>
+      <div class="callout-body" style="font-size:13px">
+        La sezione <strong>Clienti</strong> mostra l'elenco completo dal registro clienti del bot — anche i clienti senza movimenti registrati. Le colonne sono ordinabili. Per ogni cliente si vedono gli articoli consumati, i pezzi scaricati, gli eventuali <strong>resi</strong> (carichi con cliente associato) e il <strong>consumo netto</strong> (scaricati − resi).
+      </div>
     </div>
 
     <div class="box-grid" style="margin-bottom:30px;align-items:start">
@@ -2386,7 +2494,7 @@
 
   <div class="footer">
     <strong>Spix Italia Srl</strong> · Guida Operativa Bot Magazzino<br>
-    Revisione Maggio 2026 · Per assistenza contatta il responsabile di magazzino
+    Revisione Maggio 2026 · v2.4 · Per assistenza contatta il responsabile di magazzino
   </div>
 
 </body>
